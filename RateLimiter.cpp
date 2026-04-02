@@ -1,3 +1,32 @@
+/*
+	A rate limiter is a system component or algorithm used to control the rate of operations performed by a user, client, or service over a given period. It helps prevent abuse, reduce load, and ensure fair usage of system resources.
+
+
+	Rate limiters are commonly applied to:
+
+API request throttling
+Login attempt restrictions
+Messaging or notification limits
+Preventing denial-of-service (DoS) attacks
+
+1.1 Functional Requirements
+Support rate limiting on a per-user basis.
+Enforce a fixed number of allowed requests (e.g., 100) within a defined time window (e.g., 60 seconds).
+Reject requests that exceed the allowed limit and return an appropriate response.
+Provide a simple way to simulate requests in a demo or main method.
+1.2 Non-Functional Requirements
+Thread-Safety: The rate limiter must handle concurrent access from multiple threads without race conditions.
+Modularity: The system should follow object-oriented design principles with clear separation of concerns.
+Extensibility: The design should be flexible enough to support other rate limiting strategies like sliding window or token bucket.
+Maintainability: The codebase should be clean, testable, and easy to extend or debug.
+Performance: The implementation should efficiently support high-frequency request patterns using optimal data structures.
+	
+*/
+
+
+
+
+
 #include<iostream>
 #include<future>
 #include<mutex>
